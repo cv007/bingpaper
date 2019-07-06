@@ -20,7 +20,6 @@ cd $(dirname $0)
 
 #local image path/file
 img=$(pwd)/${img#/*.}
-echo $img
 
 #if no img for some reason (wget failed), quit
 [ -f "$img" ] || exit 1
