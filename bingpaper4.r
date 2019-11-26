@@ -14,7 +14,7 @@ get-wallpaper: func [ /local b h f ][
   not error? try [
     b: http://www.bing.com
     h: parse/all read b {'"&\}
-    remove-each s h [ not parse s ["/" thru ".jpg"] ]
+    remove-each s h [ not parse s ["/" thru "1080.jpg"] ]
     h: first h
     f: to-file find/tail h "." ;filename
     unless exists? to-file f [
