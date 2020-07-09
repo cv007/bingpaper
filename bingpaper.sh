@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#07052019
+#070920
 
 url=https://www.bing.com
 cd $(dirname $0)
